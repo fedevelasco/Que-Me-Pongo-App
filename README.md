@@ -8,6 +8,8 @@ Cada prenda tiene distintos atributos seleccionables los cuales afectan la selec
 
 La sugerencia en base al clima se hace consultando la API de _WeatherBit_ o _Accuweather_
 
+Ademas se pueden crear eventos para que se avise al usuario por mail o por Whatsapp el anterior dia e informar el atuendo generado. Se utilizo la API _Twilio_
+
 La aplicación fue realizada en _Java_ utilizando patrones de diseño como Strategy, Builder, State entre otros. La aplicacion se baso en la arquitectura Modelo Vista Controlador (MVC)
 
 Los datos fueron persistidos mediante _JPA-Hibernate_ en una base de datos relacional _MySQL_.
@@ -24,3 +26,5 @@ Nota: La version deployada tiene distintos bugs que en la version local no apare
 - Hibernate
 
 - Spark
+
+- Handlebars
