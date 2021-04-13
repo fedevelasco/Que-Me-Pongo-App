@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/27517fada0.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="/js/guardarropas.js"></script>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="icon" href="img/logosolo.png">
+    <link rel="stylesheet" href="/css/base.css">
+    <title>Guardarropas</title>
+  </head>
+  <body id="body">
+    </head>
+    <body id="body">
+      <header>
+        <img src="/img/untlogo.png" alt="utn logo" class="utnLogo">
+        <div class="diseniologo">
+          <img src="/img/logosolo.png" alt="diseniologo" style="">
+          <p>Diseño de Sistemas - Que me pongo?</p>
+        </div>
+
+      </header>
+
+    <div class="main_container">
+      <h1 class="encabezado">Guardarropas</h1>
+      <input type="text" name="" value="" placeholder="Buscar" id="inputUsuario">
+
+       <!-- ================= /guardarropa , te salen las opciones para crear uno================== -->
+
+      <a href="/guardarropa" class="btn-border-blue fuente">Nuevo Guardarropa</a>
+      <a href="/atuendo" class="btn-border-blue fuente">Crear Atuendo</a>
+        <a href="/home" class="btn-border-blue fuente">Volver</a>
+
+     <!-- ================= REVISAR ================== -->
+
+      <table class="tabla" id="tabla">
+        <thead>
+
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Acciones</th>
+        </thead>
+        <tbody>
+
+          <!-- ================= Each: Clase / Sus variables ================== -->
+        {{#each guardarropas}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{descripcion}}</td>
+            <td>
+
+                <!-- ================= BOTONES  ================== -->
+                <!--<button type="button" name="button" class="btn" onclick="confirmarEliminacion('{{id}}')"><i class="fas fa-trash"></i></button>-->
+                <a href="/eliminarGuardarropa/{{id}}" <i class="fas fa-trash"></i></a>
+                <a href="/prendas/{{id}}" class="btn-border-blue fuente">Ver prendas</a>
+            </td>
+        </tr>
+        {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </body>
+
+
+  <!-- ================= MODAL ELIMINACION ================== -->
+  <div class="modalEliminar modal" id="modalEliminar">
+    <div class="modalContent">
+        <input id="guardarropaId" type="hidden" value="">
+      <p>¿Desea eliminar el guardarropas?</p>
+      <button type="button" name="button" class="btn-close-modal" onclick="cerrarModal()" ><i class="fas fa-times-circle"></i></button>
+      <br>
+      <div class="">
+        <button type="button" name="button" class="btn-rojo" onclick="eliminarGuardarropa()">Eliminar</button>
+        <button type="button" name="button" class="btn-cancelar" onclick="cerrarModal()">Cancelar</button>
+      </div>
+    </div>
+  </div>
+  <!-- ================= FIN MODAL ELIMINACION ================== -->
+
+
+</html>

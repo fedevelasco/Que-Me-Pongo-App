@@ -1,0 +1,76 @@
+[2021-04-13 19:14:29] [ DEBUG] [ConfigLoader:219] Property file not found on classpath, skipping config file
+[2021-04-13 19:14:29] [ DEBUG] [TransportStrategy:71] Opportunistic TLS mode enabled for SMTP plain protocol.
+[2021-04-13 19:14:29] [ DEBUG] [MailSender:132] No proxy set, skipping proxy.
+[2021-04-13 19:14:29] [ DEBUG] [MailSender:331] starting mail with session (host: smtp.live.com, port: 25, username: correo.2019-mi-no-group-10@hotmail.com, authenticate: true, transport: SMTP)
+[2021-04-13 19:14:39] [ DEBUG] [RequestAddCookies:123] CookieSpec selected: default
+[2021-04-13 19:14:39] [ DEBUG] [RequestAuthCache:77] Auth cache not set in the context
+[2021-04-13 19:14:39] [ DEBUG] [PoolingHttpClientConnectionManager:266] Connection request: [route: {s}->https://api.weatherbit.io:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+[2021-04-13 19:14:39] [ DEBUG] [PoolingHttpClientConnectionManager:310] Connection leased: [id: 0][route: {s}->https://api.weatherbit.io:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+[2021-04-13 19:14:39] [ DEBUG] [MainClientExec:234] Opening connection {s}->https://api.weatherbit.io:443
+[2021-04-13 19:14:40] [ DEBUG] [DefaultHttpClientConnectionOperator:139] Connecting to api.weatherbit.io/158.69.116.36:443
+[2021-04-13 19:14:40] [ DEBUG] [SSLConnectionSocketFactory:366] Connecting socket to api.weatherbit.io/158.69.116.36:443 with timeout 0
+[2021-04-13 19:14:40] [ DEBUG] [SSLConnectionSocketFactory:430] Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+[2021-04-13 19:14:40] [ DEBUG] [SSLConnectionSocketFactory:431] Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+[2021-04-13 19:14:40] [ DEBUG] [SSLConnectionSocketFactory:435] Starting handshake
+[2021-04-13 19:14:40] [ DEBUG] [SSLConnectionSocketFactory:465] Secure session established
+[2021-04-13 19:14:40] [ DEBUG] [SSLConnectionSocketFactory:466]  negotiated protocol: TLSv1.2
+[2021-04-13 19:14:40] [ DEBUG] [SSLConnectionSocketFactory:467]  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+[2021-04-13 19:14:40] [ DEBUG] [SSLConnectionSocketFactory:475]  peer principal: CN=api.weatherbit.io
+[2021-04-13 19:14:40] [ DEBUG] [SSLConnectionSocketFactory:484]  peer alternative names: [api.weatherbit.io, www.api.weatherbit.io]
+[2021-04-13 19:14:40] [ DEBUG] [SSLConnectionSocketFactory:488]  issuer principal: CN=Sectigo RSA Domain Validation Secure Server CA, O=Sectigo Limited, L=Salford, ST=Greater Manchester, C=GB
+[2021-04-13 19:14:40] [ DEBUG] [DefaultHttpClientConnectionOperator:146] Connection established 192.168.100.145:50981<->158.69.116.36:443
+[2021-04-13 19:14:40] [ DEBUG] [MainClientExec:255] Executing request GET /v2.0/current?city=BuenosAires,AR&key=b761c834eedb4016b77ca40d8c904ef5 HTTP/1.1
+[2021-04-13 19:14:40] [ DEBUG] [MainClientExec:260] Target auth state: UNCHALLENGED
+[2021-04-13 19:14:40] [ DEBUG] [MainClientExec:266] Proxy auth state: UNCHALLENGED
+[2021-04-13 19:14:40] [ DEBUG] [headers:133] http-outgoing-0 >> GET /v2.0/current?city=BuenosAires,AR&key=b761c834eedb4016b77ca40d8c904ef5 HTTP/1.1
+[2021-04-13 19:14:40] [ DEBUG] [headers:136] http-outgoing-0 >> Host: api.weatherbit.io
+[2021-04-13 19:14:40] [ DEBUG] [headers:136] http-outgoing-0 >> Connection: Keep-Alive
+[2021-04-13 19:14:40] [ DEBUG] [headers:136] http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_221)
+[2021-04-13 19:14:40] [ DEBUG] [headers:136] http-outgoing-0 >> Accept-Encoding: gzip,deflate
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 >> "GET /v2.0/current?city=BuenosAires,AR&key=b761c834eedb4016b77ca40d8c904ef5 HTTP/1.1[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 >> "Host: api.weatherbit.io[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_221)[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 >> "[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 << "Server: openresty/1.11.2.2[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 << "Date: Tue, 13 Apr 2021 22:14:40 GMT[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 << "Keep-Alive: timeout=5[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 << "X-RateLimit-Limit: 500[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 << "X-RateLimit-Remaining: 499[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 << "X-RateLimit-Reset: 1618358399[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 << "X-Proxy-Cache: MISS[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 << "X-Cache-Key: api.weatherbit.io/v2.0/current?city=BuenosAires,AR&key=b761c834eedb4016b77ca40d8c904ef5[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 << "[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 << "19c[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]eR=s[0xe3] [0x10][0xed][0xf3]+<[0xd4][0x92]"[0x90]-[0xcb][0xea][0x9c][0x9b][0xb4]W\[0xca]$[0xc3][0x10]Al&[0x18]t[0x80][0xec]q<[0xfe][0xef]y`[0xb9]J[0xc5]~[0xbd]}[0xbb]o[0xb9][0x10])[0xa2] [0xfd][0xeb][0x85][0xf8]=[0xe9]WmAF'IO,)[0x88]q[0x96][0xf4][0xe5][0xaa][0xab][0x9a][0xf5][0x9a]5[0xc8]x[0x15]HOk[0xba][0xa9][0xe0]E}P[0xdf][0xce]*[0x14]o[0xf][0xca][0xeb]A[0xbc]=n[0xfd]N[0xd9][0xa8]-[0xcc][0xa7]IY[0x17][0xf8]V'PA[0xdc][0x7]O[0x0][0x14][0xb3][0x9a][0xd1][0xb2]^[0x96][0xb4]Y0[0xda][0xb3][\r][0x92][0x83][0x9b]l[0xf4]g>8[0x99][0xdb][0xfd]K1[0xe3]&[0x9][0xba][0x1a]L[0x89][0xb5][0xa5]][0xb3][0xdc]4[0x1d][0xfc][0xe0][0x8c][0xf0][0xdc][0xb][0x99][0xb3]![0x8a][0xa8][0xee][0xd0]z[0x9d][0xa0]:[0x9e][0xb9][0x15][0x99][0xed]6[0xc6][0xe2]>[0xc6]I[[0xc9][0xc3][0x8]$[0xab][0xe8][0xec][0xe]R{[0xfe]9[0x19][0x83]r%B,[0xad][0xf3]q[0x9f][0xac]; U [0xf9][0xfc][0xf7][0x19][0x91]`[0xc6]$[0x2][0x3][0xf5]Qc[0xb2]UA[0xf6]\[0xd8][0x9d][0x1][0xdd][0x1a]N[0x98]lP1-J[0xfb][0x86][0x1] [0xad][0xce][0x83]Ju[0x1a][0x11][0xa7][0xac][0xea]Pe[0xdd])G[0xa7]c~[0xa0][0xed][0xa0][0xc7]lf[0xca][0xcc][0xd8][0xa6][0xf5]&[0xeb]uH[0xab][0xd0][0x1a]*[0xa0][0xdf]n?[0xf7][0x9b]_[0xf1][0x1f]/[0xc3]6F[0xa0]}[0xd9],[0xab][0x96]6[0x14][0x93][0x9c][0x94][0xc0][0x1e][0xe8]s!zH[0xb7]$CM[0xd3]aobuu[0x1e]*[0xc]^[0x8f]Q[0xe7][0xfc][0x1f][0xa3][0x84]_[0x84][0xaf]3[0xb9][0x16][0xe9]g[0xa8]_7[0x3][0x11][0x1a]Du[0xc0][0xac][0x8c][0xdd][0xd4][0xbf]a_[0xb6]OI[0x1e]e[0xd4][0xf1].G[0xd9]V+[0xec]*[0xc6][0x91][0xcf][0x8]Zu[0xd7][0xf7][0xf9][0xe0][0x90][0xe2][0xfa][0xf0][0x3][8R[0xe0][0x81][0x2][0x0][0x0][\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 << "0[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [wire:73] http-outgoing-0 << "[\r][\n]"
+[2021-04-13 19:14:40] [ DEBUG] [headers:122] http-outgoing-0 << HTTP/1.1 200 OK
+[2021-04-13 19:14:40] [ DEBUG] [headers:125] http-outgoing-0 << Server: openresty/1.11.2.2
+[2021-04-13 19:14:40] [ DEBUG] [headers:125] http-outgoing-0 << Date: Tue, 13 Apr 2021 22:14:40 GMT
+[2021-04-13 19:14:40] [ DEBUG] [headers:125] http-outgoing-0 << Content-Type: application/json; charset=utf-8
+[2021-04-13 19:14:40] [ DEBUG] [headers:125] http-outgoing-0 << Transfer-Encoding: chunked
+[2021-04-13 19:14:40] [ DEBUG] [headers:125] http-outgoing-0 << Keep-Alive: timeout=5
+[2021-04-13 19:14:40] [ DEBUG] [headers:125] http-outgoing-0 << X-RateLimit-Limit: 500
+[2021-04-13 19:14:40] [ DEBUG] [headers:125] http-outgoing-0 << X-RateLimit-Remaining: 499
+[2021-04-13 19:14:40] [ DEBUG] [headers:125] http-outgoing-0 << X-RateLimit-Reset: 1618358399
+[2021-04-13 19:14:40] [ DEBUG] [headers:125] http-outgoing-0 << X-Proxy-Cache: MISS
+[2021-04-13 19:14:40] [ DEBUG] [headers:125] http-outgoing-0 << Access-Control-Allow-Origin: *
+[2021-04-13 19:14:40] [ DEBUG] [headers:125] http-outgoing-0 << Access-Control-Allow-Methods: GET, OPTIONS, POST
+[2021-04-13 19:14:40] [ DEBUG] [headers:125] http-outgoing-0 << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+[2021-04-13 19:14:40] [ DEBUG] [headers:125] http-outgoing-0 << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+[2021-04-13 19:14:40] [ DEBUG] [headers:125] http-outgoing-0 << X-Cache-Key: api.weatherbit.io/v2.0/current?city=BuenosAires,AR&key=b761c834eedb4016b77ca40d8c904ef5
+[2021-04-13 19:14:40] [ DEBUG] [headers:125] http-outgoing-0 << Content-Encoding: gzip
+[2021-04-13 19:14:40] [ DEBUG] [MainClientExec:285] Connection can be kept alive for 5000 MILLISECONDS
+[2021-04-13 19:14:40] [ DEBUG] [PoolingHttpClientConnectionManager:342] Connection [id: 0][route: {s}->https://api.weatherbit.io:443] can be kept alive for 5.0 seconds
+[2021-04-13 19:14:40] [ DEBUG] [DefaultManagedHttpClientConnection:88] http-outgoing-0: set socket timeout to 0
+[2021-04-13 19:14:40] [ DEBUG] [PoolingHttpClientConnectionManager:349] Connection released: [id: 0][route: {s}->https://api.weatherbit.io:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]

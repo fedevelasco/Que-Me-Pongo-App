@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Login</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+
+        body {
+            background-color:#ff6f69;
+            background: radial-gradient(#ff6f69, #ff8b87);
+        }
+
+        .input-field input[type=date]:focus + label,
+        .input-field input[type=text]:focus + label,
+        .input-field input[type=email]:focus + label,
+        .input-field input[type=password]:focus + label {
+            color: #e91e63;
+        }
+
+        .input-field input[type=date]:focus,
+        .input-field input[type=text]:focus,
+        .input-field input[type=email]:focus,
+        .input-field input[type=password]:focus {
+            border-bottom: 2px solid #e91e63;
+            box-shadow: none;
+        }
+
+        .knockout {
+            line-height: normal;
+            vertical-align: middle;
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            font-size:50pt;
+            color: blue;
+            color: #fff;
+            background: linear-gradient(110deg, #ffeead 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #C5E7D7 34%, #88d8b0 34%);
+            background-size: 400%;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+        .knockout{
+            animation: Gradient 5s ease infinite;
+            -webkit-animation: Gradient 15s ease infinite;
+            -moz-animation: Gradient 5s ease infinite;
+        }
+
+        @-webkit-keyframes Gradient {
+            0% {
+                background-position: 30% 50%
+            }
+            50% {
+                background-position: 25% 50%
+            }
+            100% {
+                background-position: 30% 50%
+            }
+
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+<div class="section"></div>
+<main>
+    <center>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <div class="logo">
+                    <h1 class="knockout">Que me<br> Pongo?</h1>
+                </div>
+            </div>
+        </div>
+        <div class="section"></div>
+
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <h4 class="grey-text text-lighten-5">Por favor, ingrese su usuario</h4>
+        <div class="section"></div>
+
+        <div class="container">
+            <div class="z-depth-4 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+
+                <form class="col s12" method="post">
+                    <div class='row'>
+                        <div class='col s12'>
+                        </div>
+                    </div>
+
+                    <div class='row'>
+                        <div class='input-field col s12'>
+                            <i class="material-icons prefix">account_circle</i>
+                            <input class='validate' type='text' name='username' id='username' />
+                            <label for='username'>Usuario</label>
+                        </div>
+                    </div>
+
+                    <div class='row'>
+                        <div class='input-field col s12'>
+                            <i class="material-icons prefix">lock</i>
+                            <input class='validate' type='password' name='password' id='password' />
+                            <label for='password'>Contraseña</label>
+                        </div>
+                    </div>
+
+                    <br />
+                    <center>
+                        <div class='row'>
+                            <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect red accent-2'>Ingresar</button>
+                        </div>
+                        <a href="/usuario">¿No tenés un usuario? Creá tu cuenta</a>
+                    </center>
+                </form>
+            </div>
+        </div>
+    </center>
+
+    <div class="section"></div>
+    <div class="section"></div>
+</main>
+
+<!--  Scripts-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/init.js"></script>
+</body>
+
+</html>
+
